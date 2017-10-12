@@ -6,6 +6,7 @@ and open the template in the editor.
 -->
 <html>
 <head>
+    
 <!-- Importar biblioteca Cesium -->
 <script src="Build/Cesium/Cesium.js"></script>
 <style>
@@ -64,7 +65,7 @@ handler.setInputAction(function(click) {
         addToMessage('Latitud', Cesium.Math.toDegrees(cartographicPosition.latitude));*/
         terrainSamplePositions = [cartographicPosition];
         
-        entity.label.eyeOffset= new Cesium.Cartesian3(0,20,0);
+        entity.label.eyeOffset= new Cesium.Cartesian3(0,15,0);
         entity.label.show = true;
             entity.label.text = alertText;
     }else{
